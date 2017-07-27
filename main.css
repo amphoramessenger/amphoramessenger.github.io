@@ -1,0 +1,195 @@
+header, main, footer, #mainContent, #textboxDiv {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer, #mainContent, #textboxDiv {
+    padding-left: 0;
+  }
+}
+
+@import "compass/css3";
+
+nav {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	user-select: none;
+}
+
+.nameClass {
+	position: relative;
+	left: 13px;
+	top: 20px;
+	font-size: 12px;
+	max-width: 350px;
+}
+
+.info {
+	color: gray;
+	text-align: center;
+	position: relative;
+	bottom: 25px;
+}
+
+.showMore {
+	position: relative;
+	top: 30px;
+	text-align: center;
+}
+
+#selectedBuddy {
+	font-size: 24px;
+	user-select: none;
+}
+
+.centerSpinner {
+	position: fixed;
+	top: 40% !important;
+	left: 40% !important;
+}
+
+.background {
+	background-color: #0288d1;
+}
+
+.addButton {
+	position: relative;
+	float: right;
+}
+
+#messagesContainer {
+  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+	margin: 50px auto;
+	margin-bottom: 40px;
+
+	div {
+		max-width: 255px;
+		word-wrap: break-word;
+		margin-bottom: 20px;
+    line-height: 24px;
+	}
+}
+
+.message {
+}
+
+#mainContent {
+	padding-bottom: 0px;
+}
+
+#textbox {
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 1px;
+  margin-bottom: 0;
+}
+
+#toast-container {
+  bottom: auto !important;
+  right: auto !important;
+  top: 10% !important;
+  left: 10% !important;
+  user-select: none;
+}
+
+@media only screen and (max-width : 992px) {
+	#toast-container {
+	  bottom: auto !important;
+	  right: auto !important;
+	  top: 7% !important;
+	  left: 0 !important;
+	  max-width: 300px !important;
+	  user-select: none;
+	}
+}
+
+#textboxDiv {
+	background-color: white;;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 1px;
+  margin-bottom: 0;
+}
+
+#floatButton {
+}
+
+.clear {
+	clear: both;
+	padding-top: 20px;
+}
+
+.messageBoxRight {
+	float: right;
+	right: 10px;
+	position: relative;
+}
+
+.readIndicator {
+	padding-left: 10px;
+	position: relative;
+	left: 5px;
+	top: 5px;
+	border: 2px solid #2196F3;
+	width: 20px !important;
+	height: 20px !important;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.readIndicatorFilled {
+	transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+	background-color: #2196F3;
+}
+
+.from-me {
+	word-wrap: break-word;
+	padding: 13px;
+	background-color: #2196F3;
+	border-radius: 20px;
+	color: white;
+	max-width: 400px;
+	display: inline-block;
+}
+
+.from-them {
+	word-wrap: break-word;
+	float: left;
+	position: relative;
+	left: 10px;
+	padding: 13px;
+	background-color: #E2E1E7;
+	border-radius: 20px;
+	color: #121214;
+	max-width: 600px;
+}
+
+@media only screen and (max-width : 992px) {
+	#toast-container {
+	  bottom: auto !important;
+	  right: auto !important;
+	  top: 7% !important;
+	  left: 0 !important;
+	  max-width: 300px !important;
+	  user-select: none;
+	}
+
+	.from-them {
+		max-width: 340px !important;
+	}
+
+	.from-me {
+		max-width: 300px !important;
+	}
+
+	#selectedBuddy {
+		font-size: 18px !important;
+	}
+}
